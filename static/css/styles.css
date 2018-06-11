@@ -14,3 +14,25 @@ footer{
 li span{
   padding-right: 15px;
 }
+.seccion{
+  margin-top: 60px
+}
+.card-body{
+  position: static;
+}
+#porque, #porque .card{
+  background-color: #70caf0;
+  color: #fff;
+}
+h2{
+  padding-top: 40px;
+}
+#lanzamiento p{
+  font-size: 70px;
+  font-weight: bold;
+  color: #70caf0;
+}
+#map {
+  width: 100%;
+  height: 400px;
+}
