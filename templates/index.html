@@ -60,6 +60,9 @@
                 <li class="nav-item" >
                   <a class="nav-link" href="#contacto">Contacto</a>
                 </li>
+                <li class="nav-item">
+                  <button id="unmuteButton" class="btn btn-outline-success my-2 my-sm-0" type="button">Habilitar sonido</button>
+                </li>
               </ul>
             </div>
           </nav>
@@ -68,12 +71,10 @@
 
         <section class="embed-responsive embed-responsive-16by9">
 
-          <video id="vid" class="embed-responsive-item" src ="../static/videos/foothd.mp4"  type="video/mp4" autoplay loop>
+          <video id="vid" muted class="embed-responsive-item" src ="../static/videos/foothd.mp4"  type="video/mp4" autoplay loop>
             Your browser does not support the video tag.
           </video>
-          <script type="text/javascript">
-              document.getElementById('vid').play();
-          </script>
+
         </section>
 
         <section id="como" class="container seccion ">
@@ -195,6 +196,22 @@
     <script src="../static/otros/js/easing.js" charset="utf-8"></script>
     <script src="../static/otros/js/compatibility.js" charset="utf-8"></script>
     <script type="text/javascript" src="../static/otros/js/jquery.smoothscroll.min.js"></script>
+
+
+<script>
+  unmuteButton.addEventListener('click', function() {
+    if($(this).text() == 'Habilitar sonido'){
+      $(this).text("Deshabilitar sonido");
+      var video = document.getElementById('vid');
+      video.muted = false;
+    }
+    else{
+      $(this).text("Habilitar sonido");
+      var video = document.getElementById('vid');
+      video.muted = true;
+    }
+  });
+</script>
     <script type="text/javascript">
     $(document).ready(function() {
       $('a[href*="#"]').smoothscroll({
