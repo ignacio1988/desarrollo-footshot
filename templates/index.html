@@ -155,34 +155,89 @@
           <iframe id="map" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDVMxcMRioAGVCO3KyRFb9BytZ8RLo0wCg&q=Space+Needle,Seattle+WA" allowfullscreen></iframe>
         </section>
 
-        <section id="contacto" class="container seccion ">
+        <section id="contacto" class=" seccion ">
           <div class="d-flex justify-content-center">
             <h2>Hablemos</h2>
           </div>
-          <div class="d-flex justify-content-between">
+          <div id="contenedor" class="container d-flex justify-content-between">
+
             <div>
-              <i class="far fa-envelope"></i>
+              <i class="far fa-envelope fa-3x"></i>
+            </div>
+            <div >
               <h4>¿Tienes alguna pregunta?</h4>
               <p>algo</p>
             </div>
+
             <div>
-              <i class="fas fa-phone"></i>
+              <i class="fas fa-phone fa-3x"></i>
+            </div>
+            <div>
               <h4>Llámanos</h4>
               <p>algo</p>
             </div>
+
             <div>
-              <i class="fab fa-facebook"></i>
+              <i class="fab fa-facebook fa-3x"></i>
+            </div>
+            <div>
               <h4>Escríbenos en facebook</h4>
               <p>algo</p>
             </div>
+
           </div>
+
+          <article id="form" class="">
+
+            <div class="container d-flex justify-content-around pt-5 pb-5">
+
+              <div id="descripcion" class="card w-25 border-0">
+                <div class="card-body">
+                  <h5 class="card-title">Envíanos un mensaje</h5>
+                  <p class="card-text">Atenderemos tus consultas dentro de 24 horas.</p>
+                  <div>
+                      <i class="fab fa-facebook fa-2x"></i>
+                      <i class="fab fa-instagram fa-2x"></i>
+                      <i class="fab fa-youtube fa-2x"></i>
+                  </div>
+                </div>
+              </div>
+
+              <form class="flex-grow">
+                <div class="form-row">
+
+                  <div class="form-group col-md-4">
+                    <label for="inputname">Nombre</label>
+                    <input type="email" class="form-control" id="inputname" placeholder="Tu nombre">
+                  </div>
+
+                  <div class="form-group col-md-4">
+                    <label for="inputEmail4">Email</label>
+                    <input type="email" class="form-control" id="inputEmail4" placeholder="Tu Email">
+                  </div>
+
+                  <div class="form-group col-md-4">
+                    <label for="inputAddress">Asunto</label>
+                    <input type="text" class="form-control" id="inputAddress" placeholder="Asunto">
+                  </div>
+                </div>
+                <div class="form-group">
+                <label for="exampleFormControlTextarea1">Mensaje</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+              </div>
+                <button type="submit" id="enviar" class="btn btn-primary">Enviar</button>
+              </form>
+            </div>
+
+          </article>
         </section>
 
 
     <footer class="footer">
       <div class="container center">
-        <div class="row justify-content-center">
-          <a class="nav-link js-scroll-trigger" href="">COMPANY &copy; 2018</a>
+        <div class="row d-flex justify-content-between">
+          <a class="nav-link js-scroll-trigger" href="" style="color:white;">&copy;2018 Footshot </a>
+          <p class="nav-link " style="font-size:10px;color:white;line-height:2.5">Desarrollo web - sebastian.m.e89@gmail.com</p>
         </div>
       </div>
     </footer>

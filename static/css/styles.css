@@ -15,7 +15,8 @@ li span{
   padding-right: 15px;
 }
 .seccion{
-  margin-top: 60px
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 .card-body{
   position: static;
@@ -24,9 +25,7 @@ li span{
   background-color: #70caf0;
   color: #fff;
 }
-h2{
-  padding-top: 40px;
-}
+
 #lanzamiento p{
   font-size: 70px;
   font-weight: bold;
@@ -35,4 +34,18 @@ h2{
 #map {
   width: 100%;
   height: 400px;
+}
+i{
+  color: #70caf0;
+}
+#enviar{
+  background-color: #70caf0;
+  border-color: #70caf0;
+}
+#form, #descripcion{
+  background-color: #f9f9f9;
+}
+#contenedor div{
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
