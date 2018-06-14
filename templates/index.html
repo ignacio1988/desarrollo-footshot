@@ -12,10 +12,11 @@
     <title>Footshot</title>
   </head>
   <body class="container-fluid">
+    <div id="top" style="height:150px;background-color:white;">
+    </div>
 
-
-        <header id="inicio">
-          <div class="row mr-0">
+        <header id="inicio" style="position:fixed;width:100%;top:0">
+          <div class="row mr-0 d-none d-xl-block d-lg-block">
             <div class="col-lg-12 pr-0">
               <nav id="top" class="navbar navbar-expand-lg navbar-light h-75">
                 <div class="container">
@@ -37,8 +38,8 @@
             </div>
           </div>
 
-          <nav class="navbar navbar-expand-lg navbar-light container">
-            <a class="navbar-brand" href="#">Navbar</a>
+          <nav id="nav" class="navbar navbar-expand-lg navbar-light container">
+            <a class="navbar-brand" href="#"><img src="../static/images/logo.png" width="100" height="100" class="img-fluid" alt=""></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
@@ -46,7 +47,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav ml-auto">
                 <li class="nav-item active" >
-                  <a class="nav-link" href="#inicio">Inicio <span class="sr-only">(current)</span></a>
+                  <a class="nav-link" href="#top">Inicio <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item" >
                   <a class="nav-link" href="#como">¿Cómo funciona?</a>
@@ -60,7 +61,7 @@
                 <li class="nav-item" >
                   <a class="nav-link" href="#contacto">Contacto</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item pl-3">
                   <button id="unmuteButton" class="btn btn-outline-success my-2 my-sm-0" type="button">Habilitar sonido</button>
                 </li>
               </ul>
@@ -69,12 +70,12 @@
 
         </header>
 
-        <section class="embed-responsive embed-responsive-16by9">
-
-          <video id="vid" muted class="embed-responsive-item" src ="../static/videos/foothd.mp4"  type="video/mp4" autoplay loop>
-            Your browser does not support the video tag.
-          </video>
-
+        <section id="video" style="">
+          <div class="embed-responsive embed-responsive-16by9">
+            <video id="vid" muted class="embed-responsive-item" src ="../static/videos/footchico.mp4"  type="video/mp4" autoplay loop>
+              Your browser does not support the video tag.
+            </video>
+          </div>
         </section>
 
         <section id="como" class="container seccion ">
@@ -244,7 +245,16 @@
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="../static/js/headroom.js" charset="utf-8"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+          var myElement = document.getElementById("inicio");
+      // construct an instance of Headroom, passing the element
+      var headroom  = new Headroom(myElement);
+      // initialise
+      headroom.init();
+    </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="../static/otros/js/bootstrap.min.js" charset="utf-8"></script>
     <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
@@ -252,29 +262,28 @@
     <script src="../static/otros/js/compatibility.js" charset="utf-8"></script>
     <script type="text/javascript" src="../static/otros/js/jquery.smoothscroll.min.js"></script>
 
-
-<script>
-  unmuteButton.addEventListener('click', function() {
-    if($(this).text() == 'Habilitar sonido'){
-      $(this).text("Deshabilitar sonido");
-      var video = document.getElementById('vid');
-      video.muted = false;
-    }
-    else{
-      $(this).text("Habilitar sonido");
-      var video = document.getElementById('vid');
-      video.muted = true;
-    }
-  });
-</script>
+    <script>
+      unmuteButton.addEventListener('click', function() {
+        if($(this).text() == 'Habilitar sonido'){
+          $(this).text("Deshabilitar sonido");
+          var video = document.getElementById('vid');
+          video.muted = false;
+        }
+        else{
+          $(this).text("Habilitar sonido");
+          var video = document.getElementById('vid');
+          video.muted = true;
+        }
+      });
+    </script>
     <script type="text/javascript">
-    $(document).ready(function() {
-      $('a[href*="#"]').smoothscroll({
-        duration:  4000,
-        easing: 'swing',
-        offset: 0
-        });
-        });
+      $(document).ready(function() {
+        $('a[href*="#"]').smoothscroll({
+          duration:  4000,
+          easing: 'swing',
+          offset: 0
+          });
+          });
     </script>
   </body>
 </html>
