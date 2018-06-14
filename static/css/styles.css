@@ -17,6 +17,7 @@ li span{
 .seccion{
   padding-top: 3rem;
   padding-bottom: 3rem;
+  z-index: 0;
 }
 .card-body{
   position: static;
@@ -48,4 +49,21 @@ i{
 #contenedor div{
   padding-top: 3rem;
   padding-bottom: 3rem;
+}
+
+.headroom {
+    will-change: transform;
+    transition: transform 200ms linear;
+}
+.headroom--pinned {
+    transform: translateY(0%);
+}
+.headroom--unpinned {
+    transform: translateY(-100%);
+}
+header{
+  z-index: 99;
+}
+img{
+  z-index: 0;
 }
