@@ -1,0 +1,282 @@
+<!doctype html>
+{% load static %}
+
+<html lang="es">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="{% static "otros/css/bootstrap.min.css" %}" >
+    <link rel="stylesheet" href="{% static "css/styles.css" %}" >
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
+    <title>Footshot</title>
+  </head>
+  <body class="container-fluid">
+
+
+        <header id="inicio">
+          <div class="row mr-0">
+            <div class="col-lg-12 pr-0">
+              <nav id="top" class="navbar navbar-expand-lg navbar-light h-75">
+                <div class="container">
+                  <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav text-white">
+                      <li class="nav-item ">
+                        <span>¿Tienes alguna pregunta?</span>
+                      </li>
+                      <li class="nav-item ">
+                        <span> +569 5068 9899</span>
+                      </li>
+                      <li class="nav-item ">
+                        <span>contacto@footshot.cl</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+            </div>
+          </div>
+
+          <nav class="navbar navbar-expand-lg navbar-light container">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item active" >
+                  <a class="nav-link" href="#inicio">Inicio <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item" >
+                  <a class="nav-link" href="#como">¿Cómo funciona?</a>
+                </li>
+                <li class="nav-item" >
+                  <a class="nav-link" href="#porque">¿Por qué?</a>
+                </li>
+                <li class="nav-item" >
+                  <a class="nav-link" href="#lanzamiento">Lanzamiento</a>
+                </li>
+                <li class="nav-item" >
+                  <a class="nav-link" href="#contacto">Contacto</a>
+                </li>
+                <li class="nav-item">
+                  <button id="unmuteButton" class="btn btn-outline-success my-2 my-sm-0" type="button">Habilitar sonido</button>
+                </li>
+              </ul>
+            </div>
+          </nav>
+
+        </header>
+
+        <section class="embed-responsive embed-responsive-16by9">
+
+          <video id="vid" muted class="embed-responsive-item" src ="{% static "videos/foothd.mp4" %}" type="video/mp4"  autoplay loop >
+            Your browser does not support the video tag.
+          </video>
+
+        </section>
+
+        <section id="como" class="container seccion ">
+          <div class="d-flex justify-content-center">
+            <h2>¿Cómo funciona Footshot?</h2>
+          </div>
+          <div class="d-flex justify-content-between mt-5">
+            <div class="card-deck " id="card">
+                <div class="card  border-0 text-center" >
+                  <img class="card-img-top img-fluid m-auto" style="width: 10rem;" src="{% static "images/1.png" %}" alt="Card image cap" >
+                  <div class="card-body">
+                    <h5 class="card-title">Encuadrar</h5>
+                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  </div>
+                </div>
+                <div class="card  border-0 text-center" >
+                  <img class="card-img-top img-fluid m-auto" style="width: 10rem;" src="{% static "images/2.png" %}"  alt="Card image cap" >
+                  <div class="card-body">
+                    <h5 class="card-title">Grabar</h5>
+                    <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                  </div>
+                </div>
+                <div class="card  border-0 text-center">
+                  <img class="card-img-top img-fluid m-auto" style="width: 10rem;" src="{% static "images/3.png" %}" alt="Card image cap" >
+                  <div class="card-body">
+                    <h5 class="card-title">Revisar</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </section>
+
+        <section id="porque" class=" seccion ">
+          <div class="d-flex justify-content-center">
+            <h2>¿Por qué elegir Footshot?</h2>
+            </div>
+            <div class="container">
+              <div class="card-deck d-flex justify-content-between mt-5" id="card">
+                  <div class="card  border-0 text-center" >
+                    <img class="card-img-top img-fluid m-auto" style="width: 10rem;" src="{% static "images/4.png" %}" alt="Card image cap" >
+                    <div class="card-body">
+                      <h5 class="card-title">+ accesible</h5>
+                    </div>
+                  </div>
+                  <div class="card  border-0 text-center" >
+                    <img class="card-img-top img-fluid m-auto" style="width: 10rem;" src="{% static "images/5.png" %}" alt="Card image cap" >
+                    <div class="card-body">
+                      <h5 class="card-title">+ confiable</h5>
+                    </div>
+                  </div>
+                  <div class="card  border-0 text-center">
+                    <img class="card-img-top img-fluid m-auto" style="width: 10rem;" src="{% static "images/6.png" %}" alt="Card image cap" >
+                    <div class="card-body">
+                      <h5 class="card-title">+ amigable</h5>
+
+                    </div>
+                  </div>
+                  <div class="card  border-0 text-center">
+                    <img class="card-img-top img-fluid m-auto" style="width: 10rem;" src="{% static "images/7.png" %}" alt="Card image cap" >
+                    <div class="card-body">
+                      <h5 class="card-title">+ rápido</h5>
+
+                    </div>
+                  </div>
+                </div>
+
+          </div>
+
+        </section>
+
+        <section id="lanzamiento">
+          <div class="d-flex justify-content-center">
+            <h2>Tiempo de espera</h2>
+          </div>
+          <p class="text-center">Falta {{countdown_days}} días y {{countdown_hours}} horas</p>
+
+          <iframe id="map" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDVMxcMRioAGVCO3KyRFb9BytZ8RLo0wCg&q=Space+Needle,Seattle+WA" allowfullscreen></iframe>
+        </section>
+
+        <section id="contacto" class=" seccion ">
+          <div class="d-flex justify-content-center">
+            <h2>Hablemos</h2>
+          </div>
+          <div id="contenedor" class="container d-flex justify-content-between">
+
+            <div>
+              <i class="far fa-envelope fa-3x"></i>
+            </div>
+            <div >
+              <h4>¿Tienes alguna pregunta?</h4>
+              <p>algo</p>
+            </div>
+
+            <div>
+              <i class="fas fa-phone fa-3x"></i>
+            </div>
+            <div>
+              <h4>Llámanos</h4>
+              <p>algo</p>
+            </div>
+
+            <div>
+              <i class="fab fa-facebook fa-3x"></i>
+            </div>
+            <div>
+              <h4>Escríbenos en facebook</h4>
+              <p>algo</p>
+            </div>
+
+          </div>
+
+          <article id="form" class="">
+
+            <div class="container d-flex justify-content-around pt-5 pb-5">
+
+              <div id="descripcion" class="card w-25 border-0">
+                <div class="card-body">
+                  <h5 class="card-title">Envíanos un mensaje</h5>
+                  <p class="card-text">Atenderemos tus consultas dentro de 24 horas.</p>
+                  <div>
+                      <i class="fab fa-facebook fa-2x"></i>
+                      <i class="fab fa-instagram fa-2x"></i>
+                      <i class="fab fa-youtube fa-2x"></i>
+                  </div>
+                </div>
+              </div>
+
+              <form class="flex-grow">
+                <div class="form-row">
+
+                  <div class="form-group col-md-4">
+                    <label for="inputname">Nombre</label>
+                    <input type="email" class="form-control" id="inputname" placeholder="Tu nombre">
+                  </div>
+
+                  <div class="form-group col-md-4">
+                    <label for="inputEmail4">Email</label>
+                    <input type="email" class="form-control" id="inputEmail4" placeholder="Tu Email">
+                  </div>
+
+                  <div class="form-group col-md-4">
+                    <label for="inputAddress">Asunto</label>
+                    <input type="text" class="form-control" id="inputAddress" placeholder="Asunto">
+                  </div>
+                </div>
+                <div class="form-group">
+                <label for="exampleFormControlTextarea1">Mensaje</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+              </div>
+                <button type="submit" id="enviar" class="btn btn-primary">Enviar</button>
+              </form>
+            </div>
+
+          </article>
+        </section>
+
+
+    <footer class="footer">
+      <div class="container center">
+        <div class="row d-flex justify-content-between">
+          <a class="nav-link js-scroll-trigger" href="" style="color:white;">&copy;2018 Footshot </a>
+          <p class="nav-link " style="font-size:10px;color:white;line-height:2.5"></p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="{% static "../staticfiles/otros/js/bootstrap.min.js" charset="utf-8" %}"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
+    <script src="{% static "../staticfiles/otros/js/easing.js" charset="utf-8" %}"></script>
+    <script src="{% static  "../staticfiles/otros/js/compatibility.js" charset="utf-8" %}"></script>
+    <script type="{% static "text/javascript" src="../staticfiles/otros/js/jquery.smoothscroll.min.js" %}"></script>
+
+
+<script>
+  unmuteButton.addEventListener('click', function() {
+    if($(this).text() == 'Habilitar sonido'){
+      $(this).text("Deshabilitar sonido");
+      var video = document.getElementById('vid');
+      video.muted = false;
+    }
+    else{
+      $(this).text("Habilitar sonido");
+      var video = document.getElementById('vid');
+      video.muted = true;
+    }
+  });
+</script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+      $('a[href*="#"]').smoothscroll({
+        duration:  4000,
+        easing: 'swing',
+        offset: 0
+        });
+        });
+    </script>
+  </body>
+</html>
